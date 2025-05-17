@@ -10,4 +10,11 @@ private:
 public:
     Mahasiswa(string pNama, int pNim) : nama(pNama), nim(pNim), nilai(0.0f) 
     {}
+
+    friend class Dosen;
+    void setNilai(float val) {
+        nilai = val;
+    }
+    
+    
 };
