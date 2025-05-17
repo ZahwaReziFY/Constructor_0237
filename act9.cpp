@@ -8,4 +8,6 @@ private:
     int nim;
     float nilai;
 public:
-}
+    Mahasiswa(string pNama, int pNim) : nama(pNama), nim(pNim), nilai(0.0f) 
+    {}
+};
