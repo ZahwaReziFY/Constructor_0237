@@ -64,4 +64,10 @@ public:
     }
 
     friend void lihatGajiStaff(const Staff& staf);
-}
+
+    void displayInfo() const {
+        cout << "Nama Staff: " << nama << endl;
+        cout << "ID Staff: " << idStaff << endl;
+        cout << "Gaji: " << gaji << endl;
+    }
+};
