@@ -50,3 +50,7 @@ public:
         cout << "Gaji: " << gaji << endl;
     }
 };
+
+class Staff {
+
+}
