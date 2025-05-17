@@ -56,5 +56,5 @@ private:
     string nama;
     int idStaff;
     float gaji;
-
+public:
 }
