@@ -26,5 +26,9 @@ public:
 
 class Dosen {
 private:
-    
+    string nama;
+    string nidn;
+    string pangkat;
+    float gaji;
+
 }
