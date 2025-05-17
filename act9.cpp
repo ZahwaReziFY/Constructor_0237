@@ -42,4 +42,11 @@ public:
     void lihatNilaiMahasiswa(const Mahasiswa& mhs) {
     cout << "Nilai Mahasiswa " << mhs.nama << " (" << mhs.nim << "): " << mhs.nilai << endl;
     }
-}
+
+    void displayInfo() {
+        cout << "Nama Dosen: " << nama << endl;
+        cout << "NIDN: " << nidn << endl;
+        cout << "Pangkat: " << pangkat << endl;
+        cout << "Gaji: " << gaji << endl;
+    }
+};
