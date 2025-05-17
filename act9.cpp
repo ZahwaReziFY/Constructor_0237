@@ -59,7 +59,7 @@ private:
 public:
     Staff(string pNama, int pId, float pGaji) : nama(pNama), idStaff(pId), gaji(pGaji) {}
 
-    void ubahPangkat(Dosen* d, string pangkatBaru) {
+    void ubahPangkatDosen(Dosen* d, string pangkatBaru) {
         d->pangkat = pangkatBaru;
     }
 
@@ -71,3 +71,41 @@ public:
         cout << "Gaji: " << gaji << endl;
     }
 };
+
+int main() {
+    // Membuat objek Mahasiswa
+    Mahasiswa mhs1("Budi Santoso", "MHS001", 85.5);
+    Mahasiswa mhs2("Siti Aminah", "MHS002", 92.0);
+
+    // Membuat objek Dosen
+    Dosen dsn1("Prof. Dr. Agus Setiawan", "DSN101", "Guru Besar", 5000000);
+    Dosen dsn2("Dr. Rina Wijaya", "DSN102", "Lektor Kepala", 4000000);
+
+    // Membuat objek Staff
+    Staff staf1("Andi Kurniawan", "STF201", 3500000);
+    Staff staf2("Dewi Lestari", "STF202", 3800000);
+
+    cout << "--- Informasi Awal ---" << endl;
+    mhs1.displayInfo();
+    cout << endl;
+    dsn1.displayInfo();
+    cout << endl;
+    staf1.displayInfo();
+    cout << endl;
+
+    // Dosen melihat nilai mahasiswa
+    dsn1.lihatNilaiMahasiswa(mhs1);
+    dsn2.lihatNilaiMahasiswa(mhs2);
+    cout << endl;
+
+    // Staff mengubah pangkat dosen
+    staf1.ubahPangkatDosen(dsn2, "Profesor");
+    cout << endl;
+    dsn2.displayInfo();
+    cout << endl;
+
+    // Fungsi friend melihat gaji staff
+    lihatGajiStaff(staf2);
+
+    return 0;
+}
