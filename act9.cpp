@@ -30,5 +30,6 @@ private:
     string nidn;
     string pangkat;
     float gaji;
-
+public:
+    
 }
