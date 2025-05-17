@@ -16,5 +16,10 @@ public:
         nilai = val;
     }
     
-    
+    void displayInfo() {
+        cout << "Nama: " << nama << endl;
+        cout << "NIM: " << nim << endl;
+        cout << "Nilai: " << nilai << endl;
+    }
+
 };
