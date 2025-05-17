@@ -39,4 +39,7 @@ public:
         pangkat = pkt;
     }
 
+    void lihatNilaiMahasiswa(const Mahasiswa& mhs) {
+    cout << "Nilai Mahasiswa " << mhs.nama << " (" << mhs.nim << "): " << mhs.nilai << endl;
+    }
 }
