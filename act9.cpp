@@ -7,5 +7,5 @@ private:
     string nama;
     int nim;
     float nilai;
-
+public:
 }
