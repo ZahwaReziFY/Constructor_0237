@@ -57,4 +57,5 @@ private:
     int idStaff;
     float gaji;
 public:
+    Staff(string pNama, int pId, float pGaji) : nama(pNama), idStaff(pId), gaji(pGaji) {}
 }
