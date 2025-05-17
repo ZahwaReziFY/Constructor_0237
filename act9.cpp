@@ -31,5 +31,7 @@ private:
     string pangkat;
     float gaji;
 public:
-    
+    Dosen(string pNama, string pNidn, string pPangkat, float pGaji)
+    : nama(pNama), nidn(pNidn), pangkat(pPangkat), gaji(pGaji) {}
+
 }
