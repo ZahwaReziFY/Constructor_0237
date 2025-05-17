@@ -34,4 +34,9 @@ public:
     Dosen(string pNama, string pNidn, string pPangkat, float pGaji)
     : nama(pNama), nidn(pNidn), pangkat(pPangkat), gaji(pGaji) {}
 
+    friend class Staff;
+    void setPangkat(string pkt) {
+        pangkat = pkt;
+    }
+
 }
