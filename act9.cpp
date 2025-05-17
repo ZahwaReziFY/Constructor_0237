@@ -63,4 +63,5 @@ public:
         d->pangkat = pangkatBaru;
     }
 
+    friend void lihatGajiStaff(const Staff& staf);
 }
